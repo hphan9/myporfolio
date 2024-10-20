@@ -2,14 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import meter50 from "../assets/img/meter50.svg";
-import meter80 from "../assets/img/meter80.svg";
 import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import vs from "../assets/img/Visual-Studio-logo.png";
 import colorSharp from "../assets/img/color-sharp.png";
-import github from "../assets/img/GitHub.png";
-import jira from "../assets/img/Jira.png";
-import vsCode from "../assets/img/vscode.png";
+
 export const Skills =()=>{
     const responsive = {
         superLargeDesktop: {
