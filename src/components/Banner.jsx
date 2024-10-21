@@ -1,12 +1,12 @@
 import {useState, useEffect} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/logo.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate =["Web Developer", "Application Developer"];
+    const toRotate =["Web Developer", "App Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100);
     const period= 2000;
@@ -45,10 +45,11 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Portfolio</span>
+                        <span className="tagline">Nice to meet you!</span>
                         <h1>{`Hi I am Emily _ `}<span className="wrap">{text}</span></h1>
-                        <p>Description</p>
-                        <button onClick={()=>console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                        <p>I'm a software developer in Toronto, Canada, and I have over three years of experience. I love building software that solves real-world problems. I enjoy coding and learning about new technologies.</p>
+                        <a href="https://www.linkedin.com/in/emilyhuyenphan/" class="btn btn-block">Let's connect <ArrowRightCircle size={25}/></a>
+                       
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                        <img src={headerImg} alt="Header Img"/>
